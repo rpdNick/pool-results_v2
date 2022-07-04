@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="stylesheet" href="./font/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="./css/results/daterangepicker.css">
+    <link rel="stylesheet" href="./css/custom-select.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/results/results.css">
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div class="page-wrap">
+        <div class="top-panel">
+            <div class="logo">
+                <img src="./img/logo-white.svg" alt="">
+            </div>
+            <div class="notification-wrap">
+                <a href="#">
+                    <div class="icon active">
+                        <img src="./img/notification-icon.png" alt="notification">
+                    </div>
+                </a>
+                <div class="exit-wrap">
+                    <a href="#">
+                        <div class="exit-icon"></div>
+                        <div class="exit-text">
+                            Выйти
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap results-content-wrap">
+            <div class="top-nav">
+                <div class="nav-back">
+                    <a href="./results-table.html">
+                        Результаты опросов
+                    </a>
+                </div>
+            </div>
+            <div class="filters-wrap">
+                <form action="">
+                    <div class="filters-wrapp__items">
+                        <!-- блок выбора даты -->
+                        <div class="box box-date">
+                            <input readonly="readonly" type="text" class="date" value="Период">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <section class="single-results-section box-wrapper">
+                <p class="question-type-details">
+                    <span class="question-type">Выбор из списка</span>
+                    <span class="question-count">625 ответов</span>
+                </p>
+                <p class="question-txt-block"><span class="question-number">1/1</span> <span
+                        class="question-txt">Насколько вероятно, что Вы
+                        порекомендуете платформу EMPLS своим клиентам?</span>
+                </p>
+                <div class="chart-container">
+                    <div class="progress-chart-container">
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Маленький ассортимент</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>45</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Слишком большой ассортимент</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Непонятное расположений товара</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Нет тестеров/товара в развернутом виде</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Нет ценников на товаре </div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Другое</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Другое</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Другое</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>100</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Другое</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>85</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-container">
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="nps-results-section box-wrapper nps-row">
+                <p class="question-type-details">
+                    <span class="question-type">NPS</span>
+                    <span class="question-count">625 ответов</span>
+                </p>
+                <p class="question-txt-block"><span class="question-number">1/2</span> <span class="question-txt">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores molestias tempora minus,
+                        repellat, eum reprehenderit reiciendis dicta non fugit vitae, quae officiis beatae ab sapiente
+                        molestiae quidem qui quos!</span>
+                </p>
+                <div class="main-nps">
+                    <div>
+                        <table class="block-table table-striped" id="faceectable">
+                            <tbody>
+                                <tr>
+                                    <td class="cntr_num" colspan="7">
+                                        DETRACTORS
+                                    </td>
+                                    <td class="cntr_num" colspan="2">
+                                        PASSIVES
+                                    </td>
+                                    <td class="cntr_num" colspan="2">
+                                        PROMOTERS
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cntr_num" colspan="7">
+                                        <div class="planka-long"></div>
+                                    </td>
+                                    <td class="cntr_num" colspan="2">
+                                        <div class="planka-long"></div>
+                                    </td>
+                                    <td class="cntr_num" colspan="2">
+                                        <div class="planka-long"></div>
+                                    </td>
+                                </tr>
+                                <tr class="rate-th">
+                                    <td>
+                                        <div class="rate-item">0</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">1</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">2</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">3</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">4</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">5</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">6</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">7</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">8</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">9</div>
+                                    </td>
+                                    <td>
+                                        <div class="rate-item">10</div>
+                                    </td>
+                                </tr>
+                                <tr class="dig-td">
+                                    <td>
+                                        <p class="sum-bot">24</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">43</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">1</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">32</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">52</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">23</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">43</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">22</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">23</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">331</p>
+                                    </td>
+                                    <td>
+                                        <p class="sum-bot">439</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="left-block">
+                        <div class="promot-wrap">
+                            <div class="label-promot">
+                                <div class="table-txt11-sp">35</div>
+                                <div class="table-txt12-sp">Promoters</div>
+                                <div class="table-txt13-sp">45.5%</div>
+                            </div>
+                            <div class="label-promot">
+                                <div class="table-txt11-sp">77</div>
+                                <div class="table-txt12-sp">Passives</div>
+                                <div class="table-txt13-sp">33.56%</div>
+                            </div>
+                            <div class="label-promot">
+                                <div class="table-txt11-sp">13</div>
+                                <div class="table-txt12-sp">Detractors</div>
+                                <div class="table-txt13-sp">45.55%</div>
+                            </div>
+                        </div>
+                        <div class="block-circle">
+                            <div class="circle">
+                                <span>Total</span>
+                                <span>476</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments-container w-100">
+                    <div class="cpmments-header">
+                        <span>Оценка</span>
+                        <span>Комментарий</span>
+                    </div>
+                    <div class="comment-item-box">
+                        <span class="comment-point">10</span>
+                        <span class="comment-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                            fugit officiis saepe quae natus eligendi fugiat placeat, vel optio reprehenderit similique,
+                            illum doloribus quasi reiciendis veniam! Quo, fuga reprehenderit. Blanditiis.</span>
+                    </div>
+                    <div class="comment-item-box">
+                        <span class="comment-point">10</span>
+                        <span class="comment-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                            fugit officiis saepe quae natus eligendi fugiat placeat, vel optio reprehenderit similique,
+                            illum doloribus quasi reiciendis veniam! Quo, fuga reprehenderit. Blanditiis.</span>
+                    </div>
+                    <div class="comment-item-box">
+                        <span class="comment-point">10</span>
+                        <span class="comment-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                            fugit officiis saepe quae natus eligendi fugiat placeat, vel optio reprehenderit similique,
+                            illum doloribus quasi reiciendis veniam! Quo, fuga reprehenderit. Blanditiis.</span>
+                    </div>
+                    <div class="comment-item-box">
+                        <span class="comment-point">10</span>
+                        <span class="comment-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                            fugit officiis saepe quae natus eligendi fugiat placeat, vel optio reprehenderit similique,
+                            illum doloribus quasi reiciendis veniam! Quo, fuga reprehenderit. Blanditiis.</span>
+                    </div>
+                    <div class="comment-item-box">
+                        <span class="comment-point">10</span>
+                        <span class="comment-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                            fugit officiis saepe quae natus eligendi fugiat placeat, vel optio reprehenderit similique,
+                            illum doloribus quasi reiciendis veniam! Quo, fuga reprehenderit. Blanditiis.</span>
+                    </div>
+                    <div class="comment-item-box">
+                        <span class="comment-point">10</span>
+                        <span class="comment-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                            fugit officiis saepe quae natus eligendi fugiat placeat, vel optio reprehenderit similique,
+                            illum doloribus quasi reiciendis veniam! Quo, fuga reprehenderit. Blanditiis.</span>
+                    </div>
+                </div>
+            </section>
+            <section class="dropdown box-wrapper">
+                <p class="question-type-details">
+                    <span class="question-type">ВЫПАДАЮЩИЙ СПИСОК</span>
+                    <span class="question-count">625 ответов</span>
+                </p>
+                <p class="question-txt-block"><span class="question-number">1/3</span> <span class="question-txt">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores molestias tempora minus,
+                        repellat, eum reprehenderit reiciendis dicta non fugit vitae, quae officiis beatae ab sapiente
+                        molestiae quidem qui quos!</span>
+                </p>
+                <div class="chart-container">
+                    <div class="progress-chart-container">
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Маленький ассортимент</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Слишком большой ассортимент</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Непонятное расположений товара</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Нет тестеров/товара в развернутом виде</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Нет ценников на товаре </div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-wrapper">
+                            <div class="progress-percentage-wrapper">
+                                <div class="progress-question-wrapper">
+                                    <div class="progress-question">Другое</div>
+                                    <div class="progress-count">
+                                        <div class="percentage-count"><span>37</span>%</div>
+                                        <div class="count"><span>25</span> ответов</div>
+                                    </div>
+                                </div>
+                                <div class="progress-loader-grey">
+                                    <div class="progress-loader-color"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-container">
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="free-answer box-wrapper">
+                <p class="question-type-details">
+                    <span class="question-type">свободный ответ</span>
+                    <span class="question-count">625 ответов</span>
+                </p>
+                <p class="question-txt-block"><span class="question-number">1/4</span> <span class="question-txt">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores molestias tempora minus,
+                        repellat, eum reprehenderit reiciendis dicta non fugit vitae, quae officiis beatae ab sapiente
+                        molestiae quidem qui quos!</span>
+                </p>
+                <div class="chart-container">
+                    <div class="comments-container w-100">
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                        <div class="comment-item-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, architecto dolorem
+                            perferendis cum iure unde impedit aut ab quas, accusamus odit minima sapiente veniam,
+                            explicabo inventore nesciunt vel! Quo, doloribus?
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="scale-results-section box-wrapper">
+                <p class="question-type-details">
+                    <span class="question-type">Шкала оценок</span>
+                    <span class="question-count">625 ответов</span>
+                </p>
+                <p class="question-txt-block"><span class="question-number">1/5</span> <span class="question-txt">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores molestias tempora minus,
+                        repellat, eum reprehenderit reiciendis dicta non fugit vitae, quae officiis beatae ab sapiente
+                        molestiae quidem qui quos!</span>
+                </p>
+                <div class="scale-graf-container">
+                    <div class="scale-barChart-container">
+                        <div class="canvas-bar-chartBox">
+                            <canvas class="scale-barChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="barChart-progress-box">
+                        <div class="barChart-progress-line-bg">
+                            <div class="barChart-progress-colored" data-progress="70">
+                                <span class="progress-average-point">7.3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="scale-results-section box-wrapper">
+                <p class="question-type-details">
+                    <span class="question-type">Шкала оценок</span>
+                    <span class="question-count">625 ответов</span>
+                </p>
+                <p class="question-txt-block"><span class="question-number">1/6</span> <span class="question-txt">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores molestias tempora minus,
+                        repellat, eum reprehenderit reiciendis dicta non fugit vitae, quae officiis beatae ab sapiente
+                        molestiae quidem qui quos!</span>
+                </p>
+                <div class="scale-graf-container">
+                    <div class="scale-barChart-container">
+                        <div class="canvas-bar-chartBox">
+                            <canvas class="scale-barChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="barChart-progress-box">
+                        <div class="barChart-progress-line-bg">
+                            <div class="barChart-progress-colored" data-progress="70">
+                                <span class="progress-average-point">7.3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ranging-results-section box-wrapper">
+                <p class="question-type-details">
+                    <span class="question-type">Ранжирование</span>
+                    <span class="question-count">625 ответов</span>
+                </p>
+                <p class="question-txt-block"><span class="question-number">1/7</span> <span class="question-txt">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores molestias tempora minus,
+                        repellat, eum reprehenderit reiciendis dicta non fugit vitae, quae officiis beatae ab sapiente
+                        molestiae quidem qui quos!</span>
+                </p>
+                <div class="renging-results-overwrap">
+                    <div class="ranging-results-data-box">
+                        <div class="ranging-item-box">
+                            <div class="ranging-item-answer">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                            <div class="ranging-item-percentage">
+                                <div class="progress-percentage-wrapper">
+                                    <div class="progress-loader-grey">
+                                        <div class="progress-loader-color">
+                                            <span class="ranging-percentage-box"><span
+                                                    class="ranging-percentage-value">50</span>%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ranging-item-box">
+                            <div class="ranging-item-answer">
+                                Lorem, ipsum dolor
+                            </div>
+                            <div class="ranging-item-percentage">
+                                <div class="progress-percentage-wrapper">
+                                    <div class="progress-loader-grey">
+                                        <div class="progress-loader-color">
+                                            <span class="ranging-percentage-box"><span
+                                                    class="ranging-percentage-value">25</span>%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ranging-item-box">
+                            <div class="ranging-item-answer">
+                                Voluptatem maiores molestias tempora minus, repellat, eum reprehenderit reiciendis
+                            </div>
+                            <div class="ranging-item-percentage">
+                                <div class="progress-percentage-wrapper">
+                                    <div class="progress-loader-grey">
+                                        <div class="progress-loader-color">
+                                            <span class="ranging-percentage-box"><span
+                                                    class="ranging-percentage-value">15</span>%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="load-wrapper">
+        <div class="loader"></div>
+    </div>
+    <script src="./js/results/moment.js"></script>
+    <script src="./js/results/daterangepicker.js"></script>
+    <script src="./js/results/results.js"></script>
+    <script src="./js/custom_select.js"></script>
+    <script src="./js/results/results-libs/chart.js"></script>
+    <script src="./js/results/results-libs/chartjs-plugin-datalabels.min.js"></script>
+    <script>
+        jQuery(function ($) {
+            $(function () {
+                $('.box-date input[type=text]').daterangepicker({
+                    opens: 'rigth',
+                    autoUpdateInput: false,
+                    locale: {
+                        format: 'DD-MM-YYYY',
+                        applyLabel: 'Принять',
+                        cancelLabel: 'Отмена',
+                        invalidDateLabel: 'Выберите дату',
+                        daysOfWeek: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+                        ],
+                        firstDay: 1
+                    }
+                }, function (start, end, label) {});
+            });
+            $('.box-date input[type=text]').on('focus', function () {
+                $(this).parent('.box-date').addClass('active-date');
+            })
+            $('.box-date input[type=text]').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('DD-MM-YYYY') + ' - ' + picker.endDate.format(
+                    'DD-MM-YYYY'));
+                $(this).parent('.box-date').removeClass('active-date');
+            });
+
+            $('.box-date input[type=text]').on('cancel.daterangepicker', function (ev, picker) {
+                $(this).parent('.box-date').removeClass('active-date');
+            });
+
+            $(document).mouseup(function (e) {
+                let date = $('.daterangepicker');
+                if (!e.target.classList.contains('date')) {
+                    if (e.target != date[0] && date.has(e.target).length === 0) {
+                        $('.active-date').removeClass('active-date');
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        // setup 
+        let data = [{
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+                datasets: [{
+                    // label: '',
+                    data: [18, 12, 6, 9, 12, 3, 9, 20, 42, 8],
+                    backgroundColor: [
+                        '#7FA1F8'
+                    ]
+                }]
+            },
+            {
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
+                datasets: [{
+                    // label: '',
+                    data: [1, 1, 1, 1, 1, 5, 5, 15],
+                    backgroundColor: [
+                        '#7FA1F8'
+                    ]
+                }]
+            }
+        ];
+    </script>
+    <script src="./js/results/results-charts.js"></script>
+</body>
+
+</html>

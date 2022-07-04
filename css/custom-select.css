@@ -1,0 +1,206 @@
+.customselect-wrapper {
+  max-width: 100%;
+}
+
+.customselect-wrapper.customselect-multiple .select-styled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 1px;
+  min-height: 40px;
+}
+
+.customselect-wrapper.customselect-multiple .select-styled .default {
+  padding: 12px;
+  padding-bottom: 16px;
+}
+
+.customselect-wrapper.customselect-multiple .select-styled > .selectvalue {
+  padding: 12px;
+  padding-right: 25px;
+  background: rgba(127, 161, 248, 0.5);
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.customselect-wrapper.customselect-multiple .select-styled > .selectvalue .remove-option {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 12px;
+  background: url(./../img/icon-remove.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.customselect-wrapper.customselect-multiple .select-options li.active {
+  background: rgba(127, 161, 248, 0.5);
+}
+
+.customselect-wrapper .checked {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 0.5px solid #C4C4C4;
+  border-radius: 50%;
+  margin-right: 5px;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.customselect-wrapper .checked.active {
+  background: #C4C4C4;
+}
+
+.customselect-wrapper .text {
+  display: inline-block;
+  max-width: calc(100% - 60px);
+}
+
+.customselect-wrapper .select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.customselect-wrapper .select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.customselect-wrapper .select-styled {
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
+          box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
+  border-radius: 15px;
+  padding: 20px;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+  max-width: 100%;
+}
+
+.customselect-wrapper .select-styled:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 15px;
+  right: 20px;
+  top: calc(50% - 7px);
+  display: block;
+  background: url(./../img/arrow-back.svg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.customselect-wrapper .select-styled.active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.customselect-wrapper .select-styled.active:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.customselect-wrapper .select-styled.active.orient-top {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.customselect-wrapper .select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 5px 4px 5px rgba(0, 0, 0, 0.03);
+          box-shadow: 1px 5px 4px 5px rgba(0, 0, 0, 0.03);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  max-height: 220px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.customselect-wrapper .select-options::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
+
+.customselect-wrapper .select-options.orient-top {
+  top: initial;
+  bottom: 100%;
+  -webkit-box-shadow: 1px -5px 4px 5px rgba(0, 0, 0, 0.03);
+          box-shadow: 1px -5px 4px 5px rgba(0, 0, 0, 0.03);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.customselect-wrapper .select-options li {
+  margin: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+  padding: 20px;
+  border-bottom: 1px solid #F5F5F7;
+}
+
+.customselect-wrapper .select-options li:first-child {
+  border-top: 1px solid #F5F5F7;
+}
+
+.customselect-wrapper .select-options li:hover {
+  background: rgba(127, 161, 248, 0.2);
+}
+
+.customselect-wrapper .select-options li[rel="hide"] {
+  display: none;
+}
+/*# sourceMappingURL=custom-select.css.map */

@@ -1,0 +1,888 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.login-page .header {
+  padding: 50px 90px;
+  height: 120px;
+}
+
+.login-page .header .logo {
+  max-width: 110px;
+}
+
+.login-page .header .logo img {
+  width: 100%;
+}
+
+.login-page .login-header {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  color: #000000;
+  padding-bottom: 22px;
+}
+
+.login-page .login-header-2 {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.login-page .btn-submit {
+  width: 100%;
+  max-width: 345px;
+  background: -webkit-gradient(linear, left top, right top, from(#7FA1F8), color-stop(35%, #B279F7), color-stop(70%, #C4C4C4), to(#C4C4C4));
+  background: linear-gradient(90deg, #7FA1F8 0%, #B279F7 35%, #C4C4C4 70%, #C4C4C4 100%);
+  background-size: 300% 100%;
+  background-position: right;
+  border-radius: 15px;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding: 17px;
+  text-align: center;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+  display: block;
+  cursor: not-allowed;
+}
+
+.login-page .btn-submit.active {
+  color: #FFFFFF;
+  background-position: left;
+  cursor: pointer;
+  pointer-events: initial;
+}
+
+.login-page .btn-white {
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 345px;
+  text-decoration: none;
+  display: block;
+}
+
+.login-page .login-content {
+  min-height: calc(100vh - 120px);
+  position: relative;
+  padding-right: 90px;
+}
+
+.login-page .login-content .bold {
+  font-weight: 700;
+}
+
+.login-page .login-content .img-cont {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.login-page .login-content .img-cont img {
+  width: 100%;
+  max-width: 468px;
+}
+
+.login-page .login-content .detail-form-text-cont {
+  position: relative;
+  max-width: 345px;
+}
+
+.login-page .login-content .detail-form-text-cont .detail-form-text {
+  position: absolute;
+  left: calc(100% + 20px);
+  top: 20px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
+          box-shadow: 1px 1px 4px 5px rgba(0, 0, 0, 0.03);
+  border-radius: 25px;
+  padding: 25px;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  width: 215px;
+}
+
+.login-page .login-content .login-form,
+.login-page .login-content .agreement-form {
+  padding-left: calc(50% + 50px);
+}
+
+.login-page .login-content .login-form .under-header,
+.login-page .login-content .agreement-form .under-header {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  padding-bottom: 20px;
+  max-width: 500px;
+}
+
+.login-page .login-content .login-form .radio-input.has-error label,
+.login-page .login-content .agreement-form .radio-input.has-error label {
+  color: #FF7262;
+}
+
+.login-page .login-content .login-form .radio-input input[type=radio],
+.login-page .login-content .login-form .radio-input input[type=checkbox],
+.login-page .login-content .agreement-form .radio-input input[type=radio],
+.login-page .login-content .agreement-form .radio-input input[type=checkbox] {
+  display: none;
+}
+
+.login-page .login-content .login-form .radio-input input[type=radio]:checked ~ label::before,
+.login-page .login-content .login-form .radio-input input[type=checkbox]:checked ~ label::before,
+.login-page .login-content .agreement-form .radio-input input[type=radio]:checked ~ label::before,
+.login-page .login-content .agreement-form .radio-input input[type=checkbox]:checked ~ label::before {
+  border-color: #7FA2F8;
+}
+
+.login-page .login-content .login-form .radio-input input[type=radio]:checked ~ label .check,
+.login-page .login-content .login-form .radio-input input[type=checkbox]:checked ~ label .check,
+.login-page .login-content .agreement-form .radio-input input[type=radio]:checked ~ label .check,
+.login-page .login-content .agreement-form .radio-input input[type=checkbox]:checked ~ label .check {
+  width: 30px;
+}
+
+.login-page .login-content .login-form .radio-input label,
+.login-page .login-content .agreement-form .radio-input label {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+  position: relative;
+}
+
+.login-page .login-content .login-form .radio-input label::before,
+.login-page .login-content .agreement-form .radio-input label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  margin-right: 15px;
+}
+
+.login-page .login-content .login-form .radio-input label .check,
+.login-page .login-content .agreement-form .radio-input label .check {
+  position: absolute;
+  height: 25px;
+  bottom: 5px;
+  left: 3px;
+  width: 0px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  overflow: hidden;
+  background: url(./../img/checkbox-arrow.svg);
+  background-position: left;
+  background-size: 25px auto;
+  background-repeat: no-repeat;
+}
+
+.login-page .login-content .login-form .login-input,
+.login-page .login-content .agreement-form .login-input {
+  padding-top: 20px;
+}
+
+.login-page .login-content .login-form .login-input.has-error input[type=text],
+.login-page .login-content .login-form .login-input.has-error input[type=email],
+.login-page .login-content .login-form .login-input.has-error input[type=tel],
+.login-page .login-content .login-form .login-input.has-error input[type=password],
+.login-page .login-content .agreement-form .login-input.has-error input[type=text],
+.login-page .login-content .agreement-form .login-input.has-error input[type=email],
+.login-page .login-content .agreement-form .login-input.has-error input[type=tel],
+.login-page .login-content .agreement-form .login-input.has-error input[type=password] {
+  border-color: #FF7262;
+}
+
+.login-page .login-content .login-form .login-input .error-text,
+.login-page .login-content .agreement-form .login-input .error-text {
+  padding-top: 5px;
+  font-size: 12pz;
+  line-height: 14px;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  color: #FF7262;
+}
+
+.login-page .login-content .login-form .login-input input[type=text],
+.login-page .login-content .login-form .login-input input[type=email],
+.login-page .login-content .login-form .login-input input[type=tel],
+.login-page .login-content .login-form .login-input input[type=password],
+.login-page .login-content .agreement-form .login-input input[type=text],
+.login-page .login-content .agreement-form .login-input input[type=email],
+.login-page .login-content .agreement-form .login-input input[type=tel],
+.login-page .login-content .agreement-form .login-input input[type=password] {
+  padding: 20px 25px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 15px;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+  outline: none;
+  width: 100%;
+  max-width: 345px;
+}
+
+.login-page .login-content .login-form .login-input input[type=text]::-webkit-input-placeholder,
+.login-page .login-content .login-form .login-input input[type=email]::-webkit-input-placeholder,
+.login-page .login-content .login-form .login-input input[type=tel]::-webkit-input-placeholder,
+.login-page .login-content .login-form .login-input input[type=password]::-webkit-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=text]::-webkit-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=email]::-webkit-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=tel]::-webkit-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=password]::-webkit-input-placeholder {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.login-page .login-content .login-form .login-input input[type=text]:-ms-input-placeholder,
+.login-page .login-content .login-form .login-input input[type=email]:-ms-input-placeholder,
+.login-page .login-content .login-form .login-input input[type=tel]:-ms-input-placeholder,
+.login-page .login-content .login-form .login-input input[type=password]:-ms-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=text]:-ms-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=email]:-ms-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=tel]:-ms-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=password]:-ms-input-placeholder {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.login-page .login-content .login-form .login-input input[type=text]::-ms-input-placeholder,
+.login-page .login-content .login-form .login-input input[type=email]::-ms-input-placeholder,
+.login-page .login-content .login-form .login-input input[type=tel]::-ms-input-placeholder,
+.login-page .login-content .login-form .login-input input[type=password]::-ms-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=text]::-ms-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=email]::-ms-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=tel]::-ms-input-placeholder,
+.login-page .login-content .agreement-form .login-input input[type=password]::-ms-input-placeholder {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.login-page .login-content .login-form .login-input input[type=text]::placeholder,
+.login-page .login-content .login-form .login-input input[type=email]::placeholder,
+.login-page .login-content .login-form .login-input input[type=tel]::placeholder,
+.login-page .login-content .login-form .login-input input[type=password]::placeholder,
+.login-page .login-content .agreement-form .login-input input[type=text]::placeholder,
+.login-page .login-content .agreement-form .login-input input[type=email]::placeholder,
+.login-page .login-content .agreement-form .login-input input[type=tel]::placeholder,
+.login-page .login-content .agreement-form .login-input input[type=password]::placeholder {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.login-page .login-content .login-form .btn-cont,
+.login-page .login-content .agreement-form .btn-cont {
+  padding-bottom: 20px;
+}
+
+.login-page .login-content .login-form .btns-cont,
+.login-page .login-content .agreement-form .btns-cont {
+  padding-top: 30px;
+}
+
+.login-page .login-content .login-form .btn-enter-google,
+.login-page .login-content .agreement-form .btn-enter-google {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 345px;
+  text-decoration: none;
+  display: block;
+}
+
+.login-page .login-content .login-form .btn-enter-google span,
+.login-page .login-content .agreement-form .btn-enter-google span {
+  padding-left: 55px;
+  position: relative;
+}
+
+.login-page .login-content .login-form .btn-enter-google span::before,
+.login-page .login-content .agreement-form .btn-enter-google span::before {
+  content: "";
+  width: 41px;
+  height: 41px;
+  background: url(./../img/icon-google-blue.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  top: -12px;
+  left: 0px;
+}
+
+.login-page .login-content .login-form .forgot-password,
+.login-page .login-content .agreement-form .forgot-password {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  display: block;
+  text-decoration: none;
+  outline: none;
+  padding-top: 10px;
+  max-width: 345px;
+}
+
+.login-page .login-content .login-error {
+  padding-top: 20px;
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF7262;
+}
+
+.login-page .interests-content {
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 30px;
+}
+
+.login-page .interests-content .login-header {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  color: #000000;
+  padding-bottom: 22px;
+}
+
+.login-page .interests-content .login-header-2 {
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.login-page .interests-content .interests-list {
+  max-width: 960px;
+  padding-top: 80px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.login-page .interests-content .interests-list .interest-item {
+  width: 25%;
+  padding-bottom: 20px;
+}
+
+.login-page .interests-content .interests-list .interest-item.show-more {
+  width: 100%;
+}
+
+.login-page .interests-content .interests-list .interest-item.show-more > div {
+  width: 25%;
+  margin: auto;
+}
+
+.login-page .interests-content .interests-list .interest-item input[type=checkbox] {
+  display: none;
+}
+
+.login-page .interests-content .interests-list .interest-item input[type=checkbox]:checked ~ label {
+  background: #7FA1F8;
+}
+
+.login-page .interests-content .interests-list .interest-item input[type=checkbox]:checked ~ label .icon {
+  background: -webkit-gradient(linear, left top, right top, from(#B279F7), to(#7FA1F8));
+  background: linear-gradient(90deg, #B279F7 0%, #7FA1F8 100%);
+}
+
+.login-page .interests-content .interests-list .interest-item label,
+.login-page .interests-content .interests-list .interest-item .item-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: calc(100% - 10px);
+  background: #E5E5E5;
+  border-radius: 30px;
+  padding: 10px 15px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.login-page .interests-content .interests-list .interest-item label:hover::before,
+.login-page .interests-content .interests-list .interest-item .item-label:hover::before {
+  opacity: 1;
+}
+
+.login-page .interests-content .interests-list .interest-item label::before,
+.login-page .interests-content .interests-list .interest-item .item-label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: -webkit-gradient(linear, left top, right top, from(#B279F7), to(#7FA1F8));
+  background: linear-gradient(90deg, #B279F7 0%, #7FA1F8 100%);
+  margin: -1px;
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+.login-page .interests-content .interests-list .interest-item label .icon,
+.login-page .interests-content .interests-list .interest-item .item-label .icon {
+  width: 39px;
+  height: 39px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.login-page .interests-content .interests-list .interest-item label .icon::before,
+.login-page .interests-content .interests-list .interest-item .item-label .icon::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  right: 7px;
+  bottom: 7px;
+  background: url(./../img/icon-hashtag.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.login-page .interests-content .interests-list .interest-item label .name,
+.login-page .interests-content .interests-list .interest-item .item-label .name {
+  text-align: center;
+  width: calc(100% - 40px);
+  font-family: "Gilroy", Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding-right: 30px;
+  padding-left: 5px;
+}
+
+.login-page .interests-content .btn-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+}
+
+.login-page .hidden {
+  display: none !important;
+}
+
+.datepicker.dropdown-menu th,
+.datepicker.datepicker-inline th,
+.datepicker.dropdown-menu td,
+.datepicker.datepicker-inline td {
+  padding: 5px;
+}
+
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:hover.active,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active {
+  background: -webkit-gradient(linear, left top, right top, from(#B279F7), to(#7FA1F8));
+  background: linear-gradient(90deg, #B279F7 0%, #7FA1F8 100%);
+}
+
+@media screen and (max-width: 1250px) {
+  .login-page .login-content .detail-form-text-cont .detail-form-text {
+    position: initial;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .login-page .header {
+    padding: 30px 50px;
+    height: 90px;
+  }
+  .login-page .interests-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .login-page .header {
+    padding: 30px 40px;
+    height: 90px;
+  }
+  .login-page .login-content {
+    min-height: calc(100vh - 90px);
+    padding-right: 40px;
+  }
+  .login-page .interests-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .login-page .interests-content .interests-list .interest-item {
+    width: 33.3%;
+  }
+  .login-page .interests-content .interests-list .interest-item.show-more {
+    width: 100%;
+  }
+  .login-page .interests-content .interests-list .interest-item.show-more > div {
+    width: 33.3%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-page .header {
+    padding: 30px 30px;
+    height: 70px;
+  }
+  .login-page .interests-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .login-page .interests-content .interests-list {
+    padding-top: 50px;
+  }
+  .login-page .interests-content .interests-list .interest-item {
+    width: 50%;
+  }
+  .login-page .interests-content .interests-list .interest-item.show-more {
+    width: 100%;
+  }
+  .login-page .interests-content .interests-list .interest-item.show-more > div {
+    width: 50%;
+    margin: auto;
+  }
+  .login-page .interests-content .login-header {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .login-page .interests-content .login-header-2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .login-page .login-content {
+    min-height: calc(100vh - 70px);
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .login-page .login-content .img-cont {
+    display: none;
+  }
+  .login-page .login-content .login-form {
+    padding-left: 0px;
+    padding-top: 20px;
+    max-width: 350px;
+    margin: auto;
+  }
+  .login-page .login-content .agreement-form {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  .login-page .login-content .agreement-form .under-header {
+    max-width: none;
+  }
+  .login-page .login-content .agreement-form .btn-submit {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login-page .header .logo {
+    max-width: 80px;
+  }
+  .login-page .btn-submit {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .login-page .interests-content .login-header {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .login-page .interests-content .login-header-2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .login-page .interests-content .interests-list {
+    padding-top: 40px;
+  }
+  .login-page .interests-content .interests-list .interest-item {
+    width: 50%;
+  }
+  .login-page .interests-content .interests-list .interest-item.show-more {
+    width: 100%;
+  }
+  .login-page .interests-content .interests-list .interest-item.show-more > div {
+    width: 50%;
+    margin: auto;
+  }
+  .login-page .interests-content .interests-list .interest-item label,
+  .login-page .interests-content .interests-list .interest-item .item-label {
+    padding: 10px;
+  }
+  .login-page .interests-content .interests-list .interest-item label .icon,
+  .login-page .interests-content .interests-list .interest-item .item-label .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .login-page .interests-content .interests-list .interest-item label .name,
+  .login-page .interests-content .interests-list .interest-item .item-label .name {
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 0px;
+  }
+  .login-page .login-content .login-form,
+  .login-page .login-content .agreement-form {
+    max-width: 100%;
+  }
+  .login-page .login-content .login-form .login-header,
+  .login-page .login-content .agreement-form .login-header {
+    font-size: 32px;
+    line-height: 36px;
+    padding-bottom: 15px;
+  }
+  .login-page .login-content .login-form .under-header,
+  .login-page .login-content .agreement-form .under-header {
+    padding-bottom: 20px;
+  }
+  .login-page .login-content .login-form .login-input,
+  .login-page .login-content .agreement-form .login-input {
+    padding-top: 15px;
+  }
+  .login-page .login-content .login-form .login-input input[type=text],
+  .login-page .login-content .login-form .login-input input[type=email],
+  .login-page .login-content .login-form .login-input input[type=tel],
+  .login-page .login-content .login-form .login-input input[type=password],
+  .login-page .login-content .agreement-form .login-input input[type=text],
+  .login-page .login-content .agreement-form .login-input input[type=email],
+  .login-page .login-content .agreement-form .login-input input[type=tel],
+  .login-page .login-content .agreement-form .login-input input[type=password] {
+    padding: 15px 15px;
+    max-width: 100%;
+  }
+  .login-page .login-content .login-form .btns-cont,
+  .login-page .login-content .agreement-form .btns-cont {
+    padding-top: 20px;
+  }
+  .login-page .login-content .login-form .btn-enter-google,
+  .login-page .login-content .agreement-form .btn-enter-google {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .login-page .login-content .login-form .btn-enter-google span,
+  .login-page .login-content .agreement-form .btn-enter-google span {
+    padding-left: 45px;
+  }
+  .login-page .login-content .login-form .btn-enter-google span::before,
+  .login-page .login-content .agreement-form .btn-enter-google span::before {
+    width: 33px;
+    height: 33px;
+    top: -9px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .login-page .interests-content .login-header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .login-page .interests-content .login-header-2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .login-page .interests-content .interests-list {
+    padding-top: 40px;
+  }
+  .login-page .interests-content .interests-list .interest-item {
+    width: 100%;
+  }
+  .login-page .interests-content .interests-list .interest-item.show-more {
+    width: 100%;
+  }
+  .login-page .interests-content .interests-list .interest-item.show-more > div {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .login-page .header {
+    padding: 30px 20px;
+  }
+  .login-page .login-content,
+  .login-page .interests-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .login-page .login-content .login-form .login-header,
+  .login-page .login-content .agreement-form .login-header {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+/*# sourceMappingURL=login.css.map */
